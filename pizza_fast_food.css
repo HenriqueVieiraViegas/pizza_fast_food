@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+nav {
+    height: 80px;
+    background-color: red;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 10rem;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    margin-left: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover {
+    background: white;
+    color: black;
+    transition: .5s;
+
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width: 1005px) {
+    nav ul {
+        float: right;
+        margin-right: 8rem;
+    }
+}
+
+@media (max-width: 975px){
+    img.logo-navbar {
+        height: 70%;
+        padding-left: -20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    nav ul {
+        float: right;
+        margin-right: 8rem;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:rgba(0, 0, 0, 0.9);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        margin-left: 1rem;
+        font-size: 20px;
+        color: black;
+        opacity: 0.8;
+
+    }
+
+    a:hover, a {
+        background: white;
+        opacity: 1;
+        transition: .5s;
+
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.pizza_menu{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: absolute;
+    top: -0%;
+    left: -0%;
+    z-index: -100;
+    object-fit: cover;
+}
+
+.grupo1{
+    padding-top: 40rem;
+    padding-left: 26rem;
+    display: flex;
+
+}
+
+.pizza1{
+    border-radius: 1rem;
+}
+
+
+.pizza2{
+    margin-left: 4rem;
+    border-radius: 1rem;
+}
+
+.grupo2{
+    padding-top: 5rem;
+    padding-left: 26rem;
+    display: flex;
+    
+}
+
+.pizza3{
+    border-radius: 1rem;
+    
+}
+.pizza4{
+    margin-left: 4rem;
+    border-radius:1rem;
+}
+
+.pz1{
+    align-items:center ;
+}
+.pz2{
+    align-items:center ;
+}
+.pz3{
+    align-items:center ;
+
+}
+.pz4{
+    align-items:center ;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.fnt2{
+    padding-left: 3rem ;
+}
+.fnt4{
+    padding-left: 3rem ;
+}
